@@ -1,0 +1,20 @@
+
+<!doctype html>
+<html>
+<head>
+<title>TheaterLichtMaschine</title>
+</head>
+<body>
+  <script>
+    "use strict";
+
+    let html = document.getElementsByTagName("html")[0];
+    html.onclick = change_color;
+
+    let counter = 1;
+    function change_color() {
+      html.style.backgroundColor = counter++ % 2 ? "#000" : "#fff";
+    }
+  </script>
+</body>
+</html>
