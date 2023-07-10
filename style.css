@@ -1,0 +1,38 @@
+:root {
+	background: black;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Adjust this as needed */
+}
+
+.container img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
+  }
+}
+
+.spin {
+	-webkit-animation: beat 1.5s ease-in-out backwards;
+	animation: beat 1.5s ease-in-out backwards;
+}
+
+#flowers {
+	height: 30%;
+}
